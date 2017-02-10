@@ -1,0 +1,6 @@
+cmake -D BUILD_NEW_PYTHON_SUPPORT=ON  -D PYTHON_INCLUDE_DIR=/home/lijun/anaconda2/include/python2.7 
+-D PYTHON_EXECUTABLE=/home/lijun/anaconda2/bin/python2 -D BUILD_OPENCV_PYTHON2=ON 
+-D PYTHON_LIBRARY=/home/lijun/anaconda2/lib/libpython2.7.so 
+-D PYTHON_NUMPY_INCLUDE_DIRS=/home/lijun/anaconda2/lib/python2.7/site-packages/numpy/core/include 
+-D PYTHON_PACKAGES_PATH=/home/lijun/anaconda2/lib/python2.7/site-packages -D CMAKE_INSTALL_PREFIX=/home/lijun/opencv/build 
+-D WITH_CUDA=ON -D WITH_CUBLAS=1 ..
