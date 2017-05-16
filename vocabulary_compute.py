@@ -2,7 +2,7 @@ import numpy as np
 import csv
 
 vocabulary = dict()
-with open('msvd_concat_sents','r') as f:
+with open('aaa1','r') as f:
     for line in f:
         line = line.strip()
         line = line.split()
@@ -11,9 +11,9 @@ with open('msvd_concat_sents','r') as f:
                 vocabulary[word] = 1
             elif word in vocabulary:
                 vocabulary[word] = vocabulary[word] + 1
-with open('vocabulary.txt','w') as file_write:
+with open('coco_vocab6.txt','w') as file_write:
     for i in vocabulary.keys():
-	if vocabulary[i] >4:
+	if vocabulary[i] >5:
         	file_write.write(i)
         	file_write.write('\n')
 
